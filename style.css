@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #E8FDFB;
+	color: #3D5261;
+}
+#container{
+	font-family: 'Raleway', sans-serif;
+	margin: 0 auto;
+	width: 100vw;
+	height: 100vh;
+}
+header{
+	width: 100%;
+	height: 45%;
+	background: #30404C;
+	margin-bottom: 5%;
+}
+#contLogos{
+	padding-top: 2%;
+	margin: 0 auto;
+	width: 90%;
+	height:80%;
+	background: #3D5261;
+}
+#mnt{
+	float: right; 
+}
+#siteTittle{
+	text-align: center;
+	color: #FDFDFD;
+	font-family: 'Roboto', sans-serif;
+}
+span{
+	color:#ECFC62;
+	font-size: 5rem;
+}
+#contGrilla{
+	width: 90vw;
+	height: auto;
+	margin: 0 auto;
+	margin-bottom: 5%;
+}
+#grilla{
+	-ms-display:grid;
+	display: grid;
+	grid-gap: 15px;/*3%;*/
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(5,1fr);
+	text-align: center;
+}
+.item{
+	padding: 10%;
+	background: white;
+}
+.pics{
+	width: 100px;
+
+}
+.name{
+	color: #3D5261;
+}
+.degree{
+	margin-top: 3%; 
+}
+p{
+	margin: 3% auto auto auto;
+	font-size: 1rem;
+	color: #3D5261;
+}
+@supports (display: grid) {
+/* Rules for browsers that support CSS Grid !*/
+.container {
+	display: grid;
+}
+@supports not (display: grid) {
+/* Fallback using Flexbox !*/
+.container {
+	display: flexbox;
+	}
+}
